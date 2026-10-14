@@ -1,0 +1,32 @@
+{
+  "name": "wapromobot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "doctor": "node src/system/doctor.js",
+    "check": "node scripts/check.js",
+    "db:init": "node scripts/init-db.js",
+    "test": "node --test tests/*.test.js",
+    "setup": "node scripts/setup.js",
+    "telegram:connect": "node scripts/telegram-connect.js",
+    "telegram:status": "node scripts/telegram-status.js",
+    "start": "node scripts/miniapp-preview.js --port 3000",
+    "menu": "node scripts/menu.js",
+    "telegram:controller": "node scripts/telegram-controller.js",
+    "dev": "node scripts/miniapp-preview.js --port 3000",
+    "build": "node -e 'console.log(\"Build complete\")'"
+  },
+  "wapromobot": {
+    "build": 213,
+    "stage": "gs-continue-group-errors"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "qrcode": "1.5.4",
+    "baileys_helper": "1.0.6"
+  }
+}

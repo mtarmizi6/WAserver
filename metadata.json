@@ -1,0 +1,7 @@
+{
+  "name": "Remix wabot to chatbot",
+  "description": "Imported from GitHub: mtarmizi6/wabot",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
